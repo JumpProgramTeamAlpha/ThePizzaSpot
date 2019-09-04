@@ -1,7 +1,7 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Creating a Store Locator on Google Maps</title>
   <style>
     /* Always set the map height explicitly to define the size of the div
@@ -34,12 +34,12 @@
             <td>Store Hours</td>
         </tr>
         <tr>
-            <td>110 Allen Rd, Basking Ridge, NJ</td>
+            <td><address>110 Allen Rd, Basking Ridge, NJ</address></td>
             <td>123-456-7890</td>
             <td>Mon - Fri: 12 - 11, Sat: 12 - 1</td>
         </tr>
         <tr>
-            <td>410 S Randolphville Rd, Piscataway, NJ</td>
+            <td><address>410 S Randolphville Rd, Piscataway, NJ</address></td>
             <td>123-789-0456</td>
             <td>Mon - Fri: 12 - 11, Sat: 12 - 1</td>
         </tr>
@@ -62,13 +62,13 @@
           var marker = new google.maps.Marker({
             position: {lat: 40.648887699999996, lng: -74.549522},
             map: map,
-            title: 'Pizza Place'
+            title: '110 Allen Rd, Basking Ridge'
           });
         
             var marker = new google.maps.Marker({
             position: {lat: 40.5499285, lng: -74.4619367},
             map: map,
-            title: 'Pizza Place'
+            title: '410 S Randolphville Rd, Piscataway'
           });
           infoWindow = new google.maps.InfoWindow();
         }
