@@ -7,9 +7,90 @@
 <body bgcolor = "gray">
 
 
-<h1> Order Menu</h1>
+<h1 align = "center"> Check out</h1>
 
+<form align = "center">
+  <input type="radio" name="size" value="small" checked> Small<br>
+  <input type="radio" name="size" value="medium"> Medium<br>
+  <input type="radio" name="size" value="large"> Large
+</form>
 
+<br />
+
+<form action="" method="post" align = "center">
+  <input type="checkbox" name="favorite1" value="sauce" /> Extra Sauce (additional $1.50)
+  <br />
+  <input type="checkbox" name="favorite2" value="cheese" /> Extra Cheese (additional $1.50)
+</form>
+ 
+ 
+ <table bgcolor = "green"
+	border = "2" cellpadding = "10" cellspacing = "10"
+	align = "center">
+	
+	<tr bgcolor = "lightyellow">
+			<td><img src = "images/MtnDew.jpg" height = 300 width = 350></img> <br /> 
+					<form action="" method="post" align = "center">
+						<input type="checkbox" name="favorite1" value="drink" /> MtnDew 2L ($1.50)
+					</form>
+			</td>
+			<td><img src = "images/Coke.jpg" height = 300 width = 350></img> <br />
+					<form action="" method="post" align = "center">
+						<input type="checkbox" name="favorite1" value="drink" /> Coke 2L ($1.50)
+					</form>
+			</td>
+			<td><img src = "images/Lemonade.jpg" height = 300 width = 350></img> <br />
+					<form action="" method="post" align = "center">
+						<input type="checkbox" name="favorite1" value="sauce" /> Lemonade 2L ($1.50)
+					</form>
+			</td>
+	
+	</tr>
+	
+	
+	<tr bgcolor = "lightyellow">
+	
+			<td><img src = "images/IcedTea.jpg" height = 300 width = 350></img> <br />
+					<form action="" method="post" align = "center">
+						<input type="checkbox" name="favorite1" value="sauce" /> IcedTea 2L ($1.50)
+					</form>
+			</td>
+			<td><img src = "images/fanta.jpg" height = 300 width = 350></img> <br />
+					<form action="" method="post" align = "center">
+						<input type="checkbox" name="favorite1" value="sauce" /> Fanta 2L ($1.50)
+					</form>
+			</td>
+			<td><img src = "images/GrapeSoda.jpg" height = 300 width = 350></img> <br />
+					<form action="" method="post" align = "center">
+						<input type="checkbox" name="favorite1" value="sauce" /> Grape Fanta 2L ($1.50)
+					</form>
+					
+			</td>
+	
+	</tr>
+	
+</table>
+	
+	
+ 
+ <br />
+
+				<form action="pizzaShopMenu.html">
+					<div align = "center">				
+							<button   onclick= > Continue Shopping</button>
+					</div>				
+				</form
+
+<br />
+			<div align = "center">
+				<button onclick="myFunction()">Order Now</button>
+			</div>
+
+<script>
+function myFunction() {
+  alert("Order Complete!");
+}
+</script>
 
 
 </body>
