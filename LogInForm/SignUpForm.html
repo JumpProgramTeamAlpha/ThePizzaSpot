@@ -1,56 +1,55 @@
 <!DOCTYPE html>
-<body style ="background-color: lightblue"; >
+<!--background image-->
+<body background = "MyImage.png" style ="background-color: lightblue"; >
+    
+  <!--audio file-->
 <audio autoplay loop hidden src="01%20-%20Stars%20at%20Our%20Backs.mp3" type="audio/mp3"></audio>
 <html>
+    
     <head>
         <title>Sign Up</title>
     </head>
+    
     <!-- style tag is used to create an internal style sheet-->
-           <!--Input-->
     <style>
         *{margin: 0; padding: 0;}
         body{background: lightblue; font-family: sans-serif;}
-        
         .form-wrap{ width: 320px; background:     #FF0000; padding: 40px 20px; box-sizing: border-box; position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%);}
         h1{text-align: center; color: #fff; font-weight: normal; margin-bottom: 20px;}
         input{width: 100%; background: none; border: 1px solid #fff; border-radius: 3px; padding: 6px 15px; box-sizing: border-box; margin-bottom: 20px; font-size: 16px; color: #fff;}
+        /*input bar*/
         input[type="button"]{ background: #bac675; border: 0; cursor: pointer; color: #3e3d3d;}
         input[type="button"]:hover{ background: #a4b15c; transition: .6s;}
         ::placeholder{color: #fff;}
     </style>
-    <!-- referenceres to other paghes on the navigation bar-->
+    
+    <!-- references to other pages on the navigation bar-->
     <a href="../HomePage/Home.html">Home</a> |
     <a href="../DealsPage/MainDeals.html">Deals</a> |
     <a href="../PizzaShopMenu/pizzaShopMenu.html">Order</a> |
     <a href="../LogInForm/loginForm.html">Login</a>  |
     <a href="pizzaStoreLocator.html"><img src="locatorMarker.png" alt="Locator Icon" style="width:35px;height:35px;"></a>
-    <a href="../AboutUsPage/AboutUsPage.html">About Us</a> 
+    <a href="../AboutUsPage/AboutUsPage.html">About Us</a>
     
+    <!--divider-->
     <div class="imgcontainer">
         <img src="MyImage.png" alt="MyImage" class="image" style="width:1200px;height:650px;">
             </div>
-    <body>
     
+    <!--input tag specifying an input field where the user can enter data-->
+    <body>
         <div class="form-wrap">
-        
             <form>
             <h1 style="color:blue;">Sign up</h1>
-            
                 <input type="text" placeholder="Name" color = #FF0000>
                 <input type="text" placeholder="Username">
                 <input type="email" placeholder="Email">
                 <input type="password" placeholder="Password">
                 <input type="password" placeholder="Confirm Password">
                 <input type="button" value="Sign Up">
-            
             </form>
-        
         </div>
-    
-    
-    
     </body>
-
-
+    
 </body>
 </html>
