@@ -16,6 +16,8 @@
 
 <h1 align = "center"> Check out</h1>
 
+<!-- Radio button for size of pizza -->
+
 <form align = "center">
   <input type="radio" name="size" value="small" checked> Small<br>
   <input type="radio" name="size" value="medium"> Medium<br>
@@ -24,12 +26,16 @@
 
 <br />
 
+<!-- Check boxes used to ask whether user wants extra sauce or cheese -->
+
 <form action="" method="post" align = "center">
   <input type="checkbox" name="favorite1" value="sauce" /> Extra Sauce (additional $1.50)
   <br />
   <input type="checkbox" name="favorite2" value="cheese" /> Extra Cheese (additional $1.50)
 </form>
  
+ 
+ <!-- Table containing drinks with check boxes, images, and prices -->
  
  <table bgcolor = "green"
 	border = "2" cellpadding = "10" cellspacing = "10"
@@ -82,6 +88,7 @@
  
  <br />
 
+				<!-- Button that takes user back to ordering menu -->
 				<form action="pizzaShopMenu.html">
 					<div align = "center">				
 							<button   onclick= > Continue Shopping</button>
@@ -89,9 +96,12 @@
 				</form
 
 <br />
+			<!-- Button that "completes" process order -->
 			<div align = "center">
 				<button onclick="myFunction()">Order Now</button>
 			</div>
+			
+			<!-- Some JavaScript alerting the user that the order is complete -->
 
 <script>
 function myFunction() {
