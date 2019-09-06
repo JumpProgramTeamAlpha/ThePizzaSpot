@@ -1,5 +1,8 @@
+<!--background color -->
 <body style ="background-color: lightblue"; >
+<!-- our audio file-->
 <audio autoplay loop hidden src="01%20-%20Stars%20at%20Our%20Backs.mp3" type="audio/mp3"></audio>
+<!--navigation feature-->
 <nav>
     <a href="../HomePage/Home.html">Home</a> |
     <a href="../DealsPage/MainDeals.html">Deals</a> |
@@ -8,30 +11,38 @@
     <a href="../PizzaStoreLocationPage/pizzaStoreLocator.html"><img src="locatorMarker.png" alt="Locator Icon" style="width:35px;height:35px;"></a>
     <a href="../AboutUsPage/AboutUsPage.html">About Us</a>  
 </nav>
-<form action="action_page.php">
+
+<!--<form action="action_page.php">-->
     <div class="imgcontainer">
         <img src="MyImage.png" alt="MyImage" class="image" style="width:600px;height:350px;">
-            </div>
+    </div>
     
     <div class="container">
+
+       <!--- The <label> tag does not render as anything special for the user but
+           it toggles the control for the user clicks--> 
         <label for="uname"><b>Username</b></label>
+
+        <!--The <input> tag specifies an input field where the user can enter data-->
         <input type="text" placeholder="Enter Username" name="uname" required >
-            
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
                 
-                <button type="submit">Login</button>
-                <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
-                        </label>
-                </div>
+        <!--button tag used to create clickable buttons on the web page-->
+        <button type="submit">Login</button>
+        <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+    </div>
     
     <div class="container" style="background-color:#f1f1f1">
         <button type="button" class="cancelbtn">Cancel</button>
-        
+        <!--span tag is used for identifying inline elements in the document-->
         <span class="psw">Forgot <a href="#">password?</a></span>
-        <p>Not a member yet?<a href="SignUpForm.html">Sign up now!</a> ?</p>
+        <!-- paragraph tag-->
         
+        <p>Not a member yet? Sign up for points and rewards?<a href="SignUpForm.html">Sign up now!</a> ?</p>
     </div>
-</form>
+    
+    </form>
 </body>
