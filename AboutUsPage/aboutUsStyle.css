@@ -20,4 +20,10 @@ p {
     text-align: center;
 }
 
+a:link {
+    color: #FF0D00; 
+}
 
+a:visited {
+    color: #FFED18;
+}
