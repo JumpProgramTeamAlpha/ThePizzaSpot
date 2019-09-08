@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<body style ="background-color: lightblue"; >
     <!-- -->
 <audio autoplay loop hidden src="01%20-%20Stars%20at%20Our%20Backs.mp3" type="audio/mp3"></audio>
+<link rel="stylesheet" type="text/css" href="storeLocatorStyle.css">
   <head>
     <!-- html responsive, resizes content with screen size -->
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Creating a Store Locator on Google Maps</title>
   <style>
     /* Always set the map height explicitly to define the size of the div
      * element that contains the map. */
@@ -32,13 +31,13 @@
     <!--Html style allows us to resize content -->
       <body style="margin:0px;" "padding:0px;" onload="initMap()">
     <div><select id="locationSelect" style="width: 10%; visibility: hidden"></select></div>
-    <div id="map" style="width: 100%; height: 65%;"></div>
+    <div id="map" style="width: 100%; height: 65%;"   border-style=solid border-width=thick></div>
     <!-- table to align text in a neat manner -->
-    <table align="center"; style="width: 50%;">
+    <table>
         <tr style="font-size: 150%">
-            <td>Location</td>
-            <td>Phone</td>
-            <td>Store Hours</td>
+            <th>Location</th>
+            <th>Phone</th>
+            <th>Store Hours</th>
         </tr>
         <tr>
             <!-- address italizes the address, just how html works -->
@@ -85,5 +84,5 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_S6tB-vYTA0ela-akg-nVY7BYNG9UKdo&callback=initMap">
     </script>
   </body>
-      </body>
+</body>
 </html>
