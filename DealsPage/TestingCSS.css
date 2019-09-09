@@ -1,7 +1,7 @@
 ul.menu {
   list-style-type: none;
 }
-ul.menu {
+ul.menu li {
   padding: 5px;
   font-size: 16px;
   font-family: "Trebuchet MS", Arial, sans-serif;
