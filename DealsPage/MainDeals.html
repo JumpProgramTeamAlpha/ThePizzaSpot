@@ -1,40 +1,27 @@
 <!DOCTYPE html>
 <!-- body html style guide -->
-<body style ="background-color: lightblue"; >
 <!-- audio -->
 <audio autoplay loop hidden src="01%20-%20Stars%20at%20Our%20Backs.mp3" type="audio/mp3"></audio>
 <html>
     <head>
-        <!--css styling -->
-        <style>
-            * {
-                box-sizing: border-box;
-            }
-        .column {
-            float: left;
-            width: 33.33%;
-            padding: 5px;
-        }
-        .row::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-        </style>
-    </head>
+         <link href="MainDeals.css" rel="stylesheet" type="text/css">
+    
     <!-- references to other objects in our project-->
     <nav>
-        <a href="../HomePage/Home.html">Home</a> |
-        <a href="MainDeals.html">Deals</a> |
-        <a href="../PizzaShopMenu/pizzaShopMenu.html">Order</a> |
-        <a href="../LogInForm/loginForm.html">Login</a>  |
-        <a href="../PizzaStoreLocationPage/pizzaStoreLocator.html"><img src="locatorMarker.png" alt="Locator Icon" style="width:35px;height:35px;"></a>
-        <a href="../AboutUsPage/AboutUsPage.html">About Us</a>  
-    </nav>
+        
+            <a class="active" href="Home.html">Home</a> 
+            <a href="../DealsPage/MainDeals.html">Deals</a> 
+            <a href="../PizzaShopMenu/pizzaShopMenu.html">Order</a> 
+            <a href="../LogInForm/loginForm.html">Login</a>  
+            <a href="../AboutUsPage/AboutUsPage.html">About Us</a>  
+        
+    <div class="toTheRight" >
+    <a href="../PizzaStoreLocationPage/pizzaStoreLocator.html"><img src="locatorMarker.png" alt="Locator Icon" style="width:35px;height:35px;"></a>
+</nav>
+    <h1 class= "glow"> Brothers Pizza Family Package Deals</h1>
+    </head>
     <body>
-            <link href="MainDeals.css" rel="stylesheet" type="text/css">
-        <!--first header-->
-        <h1 class= "glow"> Brothers Pizza Family Package Deals</h1>
+       
         <!--div-->
         <div class="row">
             <div class="column">
@@ -69,7 +56,6 @@
                 <td> Buy one pie get the second one half off </td>
             </tr>
         </table>
-    </body>
     </body>
 </html>
 
