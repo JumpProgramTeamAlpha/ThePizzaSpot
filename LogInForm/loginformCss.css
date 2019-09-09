@@ -1,17 +1,19 @@
 /**/
 /* Bordered form */
 form {
-    border: 3px solid #f1f1f1;
+    border: 5px solid #f1f1f1;
 }
 
 /* Full-width inputs */
 input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
+    width: 10%;
+    padding: 2px 2px;
+    margin: 2px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     box-sizing: border-box;
+    /*The box-sizing property allows us to include the padding and 
+    border in an element's total width and height*/
 }
 
 /* Set a style for all buttons */
@@ -27,7 +29,7 @@ button {
 
 /*  hover effect for buttons -doesnt work yet*/
 button:hover {
-    opacity: 10.8;
+    opacity: 80;
 }
 
 /* Extra style for the cancel button (red) */
