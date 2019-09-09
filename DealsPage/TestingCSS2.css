@@ -1,0 +1,18 @@
+
+#TwoOrMoreCombo {
+  left: 0px;
+  width: 46px;
+  background: url('ThreeInOne.png') 0 0;
+}
+
+#PerfectCombo {
+  left: 63px;
+  width: 43px;
+  background: url('ThreeInOne.png') 20px 0;
+}
+
+#LargeFor12 {
+  left: 129px;
+  width: 43px;
+  background: url('ThreeInOne.png') -91px 0;
+}

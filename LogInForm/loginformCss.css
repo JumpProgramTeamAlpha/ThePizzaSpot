@@ -5,8 +5,9 @@ form {
 }
 
 /* Full-width inputs */
-input[type=text], input[type=password] {
-    width: 10%;
+input[type=text], input[type=password] :checked + label span {
+
+    width: 20%;
     padding: 2px 2px;
     margin: 2px 0;
     display: inline-block;
@@ -18,13 +19,14 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 button {
+    
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 60%;
 }
 
 /*  hover effect for buttons -doesnt work yet*/
