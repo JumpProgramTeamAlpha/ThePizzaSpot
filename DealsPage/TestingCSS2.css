@@ -11,14 +11,22 @@
 .TwoOrMoreCombo {
   left: 0px;
   width: 350px;
-  height:400px;
+  height:350px;
   background: url('ThreeInOne.png') 0 0;
 }
 
 .PerfectCombo {
   left: 350px;
   width: 350px;
-  height:400px;
-  background: url('ThreeInOne.png') -350px 0;
+  height:350px;
+  background: url('ThreeInOne.png') -365px 0;
   
 }
+
+.LargeFor12 {
+    left: 350px;
+    width: 350px;
+    height:350px;
+    background: url('ThreeInOne.png') -740px 0;
+    
+  }
