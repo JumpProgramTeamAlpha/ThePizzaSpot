@@ -1,0 +1,32 @@
+
+.menu{
+   /* background-image: url('ThreeInOne.png');*/
+    background-repeat: no-repeat;
+    height:400px;
+   
+  }
+  
+
+
+.TwoOrMoreCombo {
+  left: 0px;
+  width: 350px;
+  height:350px;
+  background: url('ThreeInOne.png') 0 0;
+}
+
+.PerfectCombo {
+  left: 350px;
+  width: 350px;
+  height:350px;
+  background: url('ThreeInOne.png') -365px 0;
+  
+}
+
+.LargeFor12 {
+    left: 350px;
+    width: 350px;
+    height:350px;
+    background: url('ThreeInOne.png') -740px 0;
+    
+  }

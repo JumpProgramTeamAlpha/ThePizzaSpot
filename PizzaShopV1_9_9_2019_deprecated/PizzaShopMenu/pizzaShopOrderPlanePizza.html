@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<audio autoplay loop hidden src="01%20-%20Stars%20at%20Our%20Backs.mp3" type="audio/mp3"></audio>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="MenuStyle.css">
+<title>Order Tab</title>
+</head>
+<nav>
+        
+	<a href="../HomePage/Home.html">Home</a> 
+	<a href="../DealsPage/MainDeals.html">Deals</a> 
+	<a class="active" href="pizzaShopMenu.html">Order</a> 
+	<a href="../LogInForm/loginForm.html">Login</a>  
+	<a href="../AboutUsPage/AboutUsPage.html">About Us</a>  
+
+<div class="toTheRight" >
+<a href="../PizzaStoreLocationPage/pizzaStoreLocator.html"><img src="locatorMarker.png" alt="Locator Icon" style="width:35px;height:35px;"></a>
+</nav>
+
+<body>
+
+
+<h1 align = "center"> Check out</h1>
+
+<!-- Radio button for size of pizza -->
+
+
+<div text-align = "center">	
+	
+  <input type="radio" name="size" id = "small" > 
+	<label for="small"><span></span>Small</label> 
+	
+	<br>
+ 
+  <input type="radio" name="size" id = "med"> 
+  <label for="med"><span></span>Medium</label> 
+  
+  <br>
+  <input type="radio" name="size" value="large" id = "large"> 
+  <label for="large"><span></span>Large</label> 
+  
+ </div>
+
+
+<br />
+
+<!-- Check boxes used to ask whether user wants extra sauce or cheese -->
+
+<!-- use labels-->
+
+	<label class = "container">Extra Sauce (<i>additonal $1.50 </i>)
+
+		<input type="checkbox"/> 
+		
+		<span class = "checkmark"></span>
+	</label>
+  
+
+	<label class = "container">Extra Cheese(<i>additonal $1.50 </i>)
+
+		<input type="checkbox"/> 
+		
+		<span class = "checkmark"></span>
+	</label>
+
+ 
+  
+ <!-- Table containing drinks with check boxes, images, and prices -->
+ 
+ <table bgcolor = "green"
+	border = "2" cellpadding = "10" cellspacing = "10"
+	align = "center"
+	style="overflow-x:auto;">
+	
+	<tr bgcolor = "lightyellow">
+			<td><img src = "images/MtnDew.jpg" height = 300 width = 350></img> <br /> 
+					<form action="" method="post" align = "center">
+					<label class = "container">MtnDew 2L (<i>$1.50</i>)
+						<input type="checkbox" name="favorite1" value="drink" />
+					<span class = "checkmark"></span>	
+					</label>	
+					</form>
+			</td>
+			<td><img src = "images/Coke.jpg" height = 300 width = 350></img> <br />
+					<form action="" method="post" align = "center">
+					
+					<label class = "container">Coke 2L (<i>$1.50</i>)
+						<input type="checkbox" name="favorite1" value="drink" />
+						<span class = "checkmark"></span>	
+					</label>
+					
+						
+					</form>
+			</td>
+			<td><img src = "images/Lemonade.jpg" height = 300 width = 350></img> <br />
+					<form action="" method="post" align = "center">
+						<label class = "container">Lemonade 2L (<i>$1.50</i>)
+							<input type="checkbox" name="favorite1" value="drink" />
+							<span class = "checkmark"></span>	
+						</label>
+					</form>
+			</td>
+	
+	</tr>
+	
+	
+	<tr>
+	
+			<td><img src = "images/IcedTea.jpg" height = 300 width = 350></img> <br />
+					<form action="" method="post" align = "center">
+						<label class = "container">IcedTea 2L (<i>$1.50</i>)
+							<input type="checkbox" name="favorite1" value="drink" />
+							<span class = "checkmark"></span>	
+						</label>
+					</form>
+			</td>
+			<td><img src = "images/fanta.jpg" height = 300 width = 350></img> <br />
+					<form action="" method="post" align = "center">
+						<label class = "container">Fanta 2L (<i>$1.50</i>)
+							<input type="checkbox" name="favorite1" value="drink" />
+							<span class = "checkmark"></span>	
+						</label>
+					</form>
+			</td>
+			<td><img src = "images/GrapeSoda.jpg" height = 300 width = 350></img> <br />
+					<form action="" method="post" align = "center">
+						<label class = "container">Grape Fanta 2L (<i>$1.50</i>)
+							<input type="checkbox" name="favorite1" value="drink" />
+							<span class = "checkmark"></span>	
+						</label>
+					</form>
+					
+			</td>
+	
+	</tr>
+	
+</table>
+	
+	
+ 
+ <br />
+
+				<!-- Button that takes user back to ordering menu -->
+				<form action="pizzaShopMenu.html">
+					<div align = "center">				
+							<button  class="button button1" onclick= > Continue Shopping</button>
+					</div>				
+				</form
+
+<br />
+			<!-- Button that "completes" process order -->
+			<div align = "center">
+				<button class="button button2"onclick="myFunction()">Order Now</button>
+			</div>
+			
+			<!-- Some JavaScript alerting the user that the order is complete -->
+
+<script>
+function myFunction() {
+  alert("Order Complete!");
+}
+</script>
+
+
+</body>
