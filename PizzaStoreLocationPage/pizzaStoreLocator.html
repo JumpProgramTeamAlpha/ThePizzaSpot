@@ -4,8 +4,9 @@
 <link rel="stylesheet" type="text/css" href="storeLocatorStyle.css">
   <head>
     <!-- html responsive, resizes content with screen size -->
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
   <style>
     /* Always set the map height explicitly to define the size of the div
      * element that contains the map. */
@@ -33,7 +34,7 @@
 </nav>
     <!--Html style allows us to resize content -->
       <body style="margin-top:60px;" "padding:0px;" onload="initMap()">
-    <div><select id="locationSelect" style="width: 10%; visibility: hidden"></select></div>
+
     <div id="map" style="width: 100%; height: 65%;"   border-style=solid border-width=thick></div>
     <!-- table to align text in a neat manner -->
     <table>
@@ -61,27 +62,46 @@
       var locationSelect;
 
         function initMap() {
-          var baskingRidge = {lat: 40.706570, lng: -74.58326439999999};
+          var baskingRidge = {lat: 40.6487846, lng: -74.5854953};
+          var piscataway = {lat: 40.54959, lng: -74.4615}
           map = new google.maps.Map(document.getElementById('map'), {
             center: baskingRidge,
-            zoom: 10.5,
-            mapTypeId: 'roadmap',
-            mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU}
+            zoom: 10.5
           });
-        
-          var marker = new google.maps.Marker({
-            position: {lat: 40.648887699999996, lng: -74.549522},
-            map: map,
-            title: '110 Allen Rd, Basking Ridge'
+        var marker = new google.maps.Marker({position: baskingRidge, map: map});
+        var marker = new google.maps.Marker({position: piscataway, map: map});
+        infoWindow = new google.maps.InfoWindow;
+
+        // Try HTML5 geolocation.
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('Location found.');
+            infoWindow.open(map);
+            map.setCenter(pos);
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
           });
-        
-            var marker = new google.maps.Marker({
-            position: {lat: 40.5499285, lng: -74.4619367},
-            map: map,
-            title: '410 S Randolphville Rd, Piscataway'
-          });
-          infoWindow = new google.maps.InfoWindow();
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
         }
+      }
+    
+        function handleLocationError(browserHasGeolocation, infoWindow, pos){
+            infoWindow.setPosition(pos);
+            infoWindow.setContent(browserHasGeolocation ? 
+                                 'Error: The Geolocation service failed.' :
+                                 'Error: Your browser doesn\'t support geolocation.');
+            infoWindow.open(map);
+        }
+        
+
   </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_S6tB-vYTA0ela-akg-nVY7BYNG9UKdo&callback=initMap">
