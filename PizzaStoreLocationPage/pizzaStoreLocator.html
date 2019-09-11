@@ -68,8 +68,12 @@
             center: baskingRidge,
             zoom: 10.5
           });
-        var marker = new google.maps.Marker({position: baskingRidge, map: map});
-        var marker = new google.maps.Marker({position: piscataway, map: map});
+        var marker = new google.maps.Marker({
+            position: baskingRidge, map: map,
+            title: "110 Allen Rd."});
+        var marker = new google.maps.Marker({
+            position: piscataway, map: map,
+            title: "410 S Randolphville Rd."});
         infoWindow = new google.maps.InfoWindow;
 
         // Try HTML5 geolocation.
