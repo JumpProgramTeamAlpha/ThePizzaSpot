@@ -16,11 +16,16 @@
 /*glowing text!*/
 .glow {
   font-size: 80px;
-  color: #fff;
+  color: #fdfd96;
   text-align: center;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
+  
+	border-style: solid;
+	border-color: #FF0D00;
+	border-width: 5px;
+	background-color: #FF0D00;
 }
 @-webkit-keyframes glow {
   from {

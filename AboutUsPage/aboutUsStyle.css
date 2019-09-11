@@ -38,17 +38,21 @@ a:hover:not(.active) {
 }
 
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+   border-style: solid;
+	border-color: #FF0D00;
+	border-width: 5px;
+	background-color: #FF0D00;
 }
 
 h1 {
+	color:#FFED18;
     font-family: fantasy;
-    color: #FF0D00;
+    background-color: #FF0D00;
     outline-style: solid;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 80px;
+	border-width: 5px;
+
 }
 
 p {
