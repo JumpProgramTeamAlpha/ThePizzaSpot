@@ -57,6 +57,9 @@ img.MyImage {
 .container {
     padding: 16px;
 }
+.container1 {
+    padding: 12px;
+}
 
 /* Forgot passwordtext */
 span.psw {

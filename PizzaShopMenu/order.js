@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', ready)
 } else {
@@ -67,9 +68,19 @@ function addToCartClicked(event){
 	var title = shopItem.getElementsByClassName('shop-item-title')[0].innerText
 	console.log(title)
 	var price = shopItem.getElementsByClassName('shop-item-price')[0].innerText
+=======
+var removeCartItemButton = document.getElementsByClassName('button2')
+console.log(removeCartItemButton)
+
+for(var i = 0; i < removeCartItemButton.length; i++){
+	var button = removeCartItemButton[i]
+>>>>>>> 2fd6b8937c81a38e5367c1db80e4b4b544b98610
 	
-	var imageSRC = shopItem.getElementsByClassName('shop-item-image')[0].src
+	button.addEventListener('click', function(){
+		console.log('clicked')
+	})
 	
+<<<<<<< HEAD
 	addItemToCart(title, price, imageSRC)	
 }
 
@@ -130,3 +141,7 @@ function addItemToCart(title, price, imageSRC){
 		total = Math.round(total * 100)/100
 		document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
 	}
+=======
+	
+}
+>>>>>>> 2fd6b8937c81a38e5367c1db80e4b4b544b98610

@@ -4,11 +4,11 @@ body {
 
 /* Change header color, added border with backround and change font + font size */
 h1{
-	color:#FFED18;
+	color:#FF0D00;
 	border-style: solid;
 	border-color: #FF0D00;
 	border-width: 5px;
-	background-color: #FF0D00;
+	background-color: #FFED18;
 	font-family: "Arial Black", Gadget, sans-serif;
 	 font-size: 400%;
 	
@@ -304,21 +304,6 @@ input[type="radio"]:checked + label span {
 
 .button2:hover{
   background-color: blue; 
-}
-
-.btn {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 18px 12px;
-  cursor: pointer;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
 }
 
 /*makes table responsive*/
