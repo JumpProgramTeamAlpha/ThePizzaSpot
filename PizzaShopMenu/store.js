@@ -27,10 +27,23 @@ function ready() {
 }
 
 function purchaseClicked() {
-    alert('Thank you for your purchase')
+	
+	
+
     var cartItems = document.getElementsByClassName('cart-items')[0]
+	
+	if(cartItems > 0){
+		alert('Thank you for your purchase') 
+	}
+	else {
+		 alert('Nothing in cart')
+	}
+	
+
+		
+	
     while (cartItems.hasChildNodes()) {
-        cartItems.removeChild(cartItems.firstChild)
+        cartItems.removeChild(cartItems.firstChild) 
     }
     updateCartTotal()
 }

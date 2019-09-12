@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
-@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
 
 @font-face {
     font-family: "Booter - Zero Zero";
@@ -337,4 +336,5 @@ html, body {
     display: block;
     margin: 40px auto 80px auto;
     font-size: 1.75em;
+	 margin-right: 20px;
 }
