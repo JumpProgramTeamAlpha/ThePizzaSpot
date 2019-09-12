@@ -1,6 +1,37 @@
 <!DOCTYPE html>
 <!--navigation tags-->
+<head>
 <link rel="stylesheet" type="text/css" href="aboutUsStyle.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+    .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+    .row.content {height: 100%}
+    
+    .sidenav {
+        padding-top: 60px;
+        height: 100%;
+    }
+    
+    footer {
+        padding: 15px;
+    }
+    
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+    
+</style>
+</head>
 <header>
     
     <nav>   
@@ -15,45 +46,58 @@
 </div>
 </nav>
 </header>
+<br>
 
 
 <!--audio fature-->
     <audio autoplay loop hidden src="01%20-%20Stars%20at%20Our%20Backs.mp3" type="audio/mp3"></audio>
 <body>
     <!--First header-->
-	
-	 <h1> About Us</h1>
  
 
 <!--paragraph on our history-->
-    
-<p>The Collabera brothers emigrated from Greece in the early 1970s with the hopes of success. Their strong unity cultivated ideas, love for one another, and inspiration. Together they opened their first location in New Jersey during 1972. By 1981 the brothers owned five restaurants. It was during that period the famous pizza recipe was founded at the Brothers Pizza location in Lakeville, CT. Quite rapidly, their reputation and knowledge of making flavorful recipes grew. Brothers Pizza became an immediate success! Since then, the brothers have been accommodating to customers needs by offering unique tastes, consistency, and exceptional service.
-
-The year was 1976. It was the collaboration of the four brothers that gave way to the name  Brothers Pizza and its continuing success. During that same year, the famous Italian salad dressing recipe was formulated. Since then the brothers expanded their portfolio of restaurants to 9 Four Brothers while adding The Boathouse in Lakeville, CT. The family uses their local farm to supply the restaurants with certain dairy products and their olive orchards in Greece for olive oil. Today, people throughout The Tri-State area have discovered from personal experience that the best pizza and salads, among other delicious menu items, is to be found at your local Four Brothers location.</p>
-
-<!--timeline image-->
-<div align="center">
-    <img id="image" src="TimeLine.png" class="center" style="width: 45%">
+<div class="container-fluid text-center">
+    <div class="row content">
+        <div class="col-sm-2 sidenav">
+            <div class="well">
+                <p3>AD SPACE HERE</p3>
+            </div>
+            <div class="well">
+                <p3>AD SPACE HERE</p3>
+            </div>
         </div>
-<script type = "text/javascript">
-    var image = document.getElementById("image");
-    var currentPos = 0;
-    var images = ["TimeLine.png", "download.jpg", "download-1.jpg", "images-2.jpg", "images.jpg", "images-1.jpg"];
-    
-    function volgendefoto() {
-        if (++currentPos >= images.length)
-            currentPos = 0;
-        image.src = images[currentPos];
-    }
-    
-    setInterval(volgendefoto, 5000);
-    </script>
+        <div class="col-sm-8 text-left">
+            <h1> About Us</h1>
+            <p>The Collabera brothers emigrated from Greece in the early 1970s with the hopes of success. Their strong unity cultivated ideas, love for one another, and inspiration. Together they opened their first location in New Jersey during 1972. By 1981 the brothers owned five restaurants. It was during that period the famous pizza recipe was founded at the Brothers Pizza location in Lakeville, CT. Quite rapidly, their reputation and knowledge of making flavorful recipes grew. Brothers Pizza became an immediate success! Since then, the brothers have been accommodating to customers needs by offering unique tastes, consistency, and exceptional service.
 
-<!--hyperlink reference-->
-</body>
-<footer>
+            The year was 1976. It was the collaboration of the four brothers that gave way to the name  Brothers Pizza and its continuing success. During that same year, the famous Italian salad dressing recipe was formulated. Since then the brothers expanded their portfolio of restaurants to 9 Four Brothers while adding The Boathouse in Lakeville, CT. The family uses their local farm to supply the restaurants with certain dairy products and their olive orchards in Greece for olive oil. Today, people throughout The Tri-State area have discovered from personal experience that the best pizza and salads, among other delicious menu items, is to be found at your local Four Brothers location.</p>
+        </div>
+        <div align="center">
+            <img id="image" src="TimeLine.png" class="center">
+                <!--timeline image-->
+            <script type = "text/javascript">
+                var image = document.getElementById("image");
+                var currentPos = 0;
+                var images = ["TimeLine.png", "download.jpg", "download-1.jpg", "images-2.jpg", "images.jpg", "images-1.jpg"];
+    
+                function volgendefoto() {
+                if (++currentPos >= images.length)
+                currentPos = 0;
+                image.src = images[currentPos];
+                }
+    
+                setInterval(volgendefoto, 5000);
+            </script>
+        </div>
+        <div class="col-sm-2 sidenav">
+        </div>
+    </div>
+</div>
+
+<footer class="container-fluid text-center">
     <p2>
+        <!--hyperlink reference-->
         <b>2% OF ALL OF THE PROCEEDS GO TO <a href="https://www.stjude.org/donate/donate-to-st-jude.html?sc_dcm=236375153&sc_cid=kwp70587&source_code=IIQ181010008&ef_id=Cj0KCQjw5MLrBRClARIsAPG0WGxLziUMvW81AKuyvaIS_wDo4mu8z7GpVPqk41YxCSPghl2K-db4hLwaAkMBEALw_wcB:G:s&s_kwcid=AL!4519!3!336377235014!e!!g!!st.jude%20research%20hospital&gclid=Cj0KCQjw5MLrBRClARIsAPG0WGxLziUMvW81AKuyvaIS_wDo4mu8z7GpVPqk41YxCSPghl2K-db4hLwaAkMBEALw_wcB" target="_blank">St. Jude Hospital</a>. Thank you!</b>
     </p2>
 </footer>
-</html>
+</body>
