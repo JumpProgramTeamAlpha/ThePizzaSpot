@@ -24,28 +24,59 @@ function ready() {
     }
 
     document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
+	
+	var x = document.getElementById('load');
+	
+	 x.style.display = "none";
+	
+	
 }
 
 function purchaseClicked() {
 	
 	
+	
+	var x = document.getElementById('load');
+	
+	var y = document.getElementsByClassName('btn-purchase')[0];
+	
+	
+  if (x.style.display === "none") {
+    x.style.display = "block";
+	y.style.visibility = "hidden";
+	
+  } else {
+    x.style.display = "none";
+	
+  }
 
     var cartItems = document.getElementsByClassName('cart-items')[0]
 	
-	if(cartItems > 0){
-		alert('Thank you for your purchase') 
-	}
-	else {
-		 alert('Nothing in cart')
-	}
+	var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
 	
-
+	console.log(cartItemNames.length);
+	
+	
+	
+	if(cartItemNames.length == 0){
+		alert('Nothing in cart');
+		x.style.display = "none";
+		y.style.visibility = "visible";
+	}
+	else 
+		alert('Thank you for your purchase! ');
+	
+	
+	//alert('Thank you for your purchase');
+	
+	
 		
 	
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild) 
     }
     updateCartTotal()
+
 }
 
 function removeCartItem(event) {
@@ -93,6 +124,7 @@ function addItemToCart(title, price, imageSrc) {
         <div class="cart-quantity cart-column">
             <input class="cart-quantity-input" type="number" value="1">
             <button class="btn btn-danger" type="button">REMOVE</button>
+			
         </div>`
     cartRow.innerHTML = cartRowContents
     cartItems.append(cartRow)
