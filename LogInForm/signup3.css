@@ -58,7 +58,7 @@
     font-size: 21px;
     padding: 7px 10px;
     width: 100%;
-     font-family: Oswald;
+    font-family: Oswald;
 }
 
 /* top of chat box (pizza bro box when hovered*/
@@ -110,7 +110,7 @@
     border-radius: 50%;
     width: 44px;
 }
-/*type a message box*/
+/*type  message box*/
 .popup-messages-footer > input {
     border-bottom: 1px solid #FFED18 !important;
     height: 34px !important;
@@ -283,11 +283,43 @@
     background:#383838;
     
 }
-
+.direct-chat-text::after, .direct-chat-text::before {
+    border-color: transparent #dfece7 transparent transparent;
+    
+}
+#imagebg{
+    background: url("BrickPizza.png")   
+}
 .popup-messages .direct-chat-msg {
     margin-bottom: 10px;
     position: relative;
 }
+
+
+/*text in box*/
+.popup-messages .direct-chat-text {
+    background: #dfece7 none repeat scroll 0 0;
+    border: 1px solid #dfece7;
+    border-radius: 2px;
+    color: #1f2121; 
+}
+
+/*message box width?*/   
+.direct-chat-text {
+    background: #d2d6de none repeat scroll 0 0;
+    border: 1px solid #d2d6de;
+    border-radius: 5px;
+    color: #afcccc; 
+   
+    margin: 5px 0 0 50px;
+    padding: 5px 10px;
+    position: relative;
+}
+
+
+
+
+
 /*
 .popup-messages .doted-border::after {
 	background: transparent none repeat scroll 0 0 !important;*/
@@ -317,10 +349,7 @@
 	 display: inline;
 	  z-index: -2;
 }*/
-.direct-chat-text::after, .direct-chat-text::before {
-    border-color: transparent #dfece7 transparent transparent;
-    
-}
+
 /*
 .direct-chat-text::after, .direct-chat-text::before {
     -moz-border-bottom-colors: none;
@@ -344,30 +373,3 @@
     margin-top: -4px;
 }
 */
-/*text in box*/
-.popup-messages .direct-chat-text {
-    background: #dfece7 none repeat scroll 0 0;
-    border: 1px solid #dfece7;
-    border-radius: 2px;
-    color: #1f2121; 
-}
-
-/*message box width?*/   
-.direct-chat-text {
-    background: #d2d6de none repeat scroll 0 0;
-    border: 1px solid #d2d6de;
-    border-radius: 5px;
-    color: #afcccc; 
-   
-    margin: 5px 0 0 50px;
-    padding: 5px 10px;
-    position: relative;
-}
-
-#imagebg{
-
-background: url("BrickPizza.png")
-
-
-
-}
