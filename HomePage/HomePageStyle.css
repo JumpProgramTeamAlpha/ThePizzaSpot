@@ -1,6 +1,9 @@
 body {
     background-color: #383838 !important;
 }
+footer{
+  color: #FF0D00;
+}
 
 nav {
     margin: 0;
@@ -51,6 +54,9 @@ h1 {
     border-color: red !important;
     background-color:red !important;
     font-size: 60px !important;
+}
+h2{
+  color: black;
 }
 img{
     /*style ="width:128px;height:128px;" */
