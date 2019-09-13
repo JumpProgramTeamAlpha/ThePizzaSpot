@@ -70,3 +70,9 @@ p2 {
     height: 350px !important;
     width: 50% !important;
 }
+
+#myCarousel { background: #383838 !important; }
+
+#ad {
+    width: 109%;
+}
