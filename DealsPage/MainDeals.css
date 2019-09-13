@@ -104,6 +104,9 @@ a:hover:not(.active) {
 }
 
 
-.id-table, .h2 {
+.id-table {
+  color:#FFED18;
+}
+.h2 {
   color:#FFED18;
 }
