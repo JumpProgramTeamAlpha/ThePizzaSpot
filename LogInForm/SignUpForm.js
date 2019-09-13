@@ -17,7 +17,7 @@
         var name = document.getElementById("name").value;
         var email = document.getElementById("email").value;
         var Username = document.getElementById("Username").value;
-        var emailReg = /.+@.+$/;
+        var emailReg = /.+@.+\..+$/;
         var password1 = document.getElementById("password1").value;
         var password2 = document.getElementById("password2").value;
         if (name === '' || email === ''|| Username ==='' ) {
