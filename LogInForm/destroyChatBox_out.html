@@ -115,11 +115,12 @@
                         <abbr class="timestamp">September 8th, 2019</abbr>
                 </div>		
                         <!-- Message. Default to the left -->
-                <div class="direct-chat-msg doted-border">
+                <div class="direct-chat-msg doted-border" id="chat">
                     <div class="direct-chat-info clearfix">   
                     <span class="direct-chat-name pull-left">Customer Representative</span>
                     </div>
-                          <!-- /.direct-chat-info -->
+                    
+                    <!-- /.direct-chat-info -->
                     <img alt="message user image" src="PizzaRep.png" class="direct-chat-img" >
                     <!-- /.direct-chat-img -->
                     <div class="direct-chat-text">
@@ -131,48 +132,63 @@
                     </div>
                     
                     <div class="direct-chat-info clearfix">
-                            <span id="customer-reply" class="direct-chat-reply-name">Customer</span>
+                        
+                        <span id="customer-reply" class="direct-chat-reply-name">Customer</span>
+                        
                         <span class="direct-chat-img-reply-small pull-right">
-    
-     
-        </script>
-                        <div class="direct-chat-text">
-                            
-                                <script type="text/javascript">
-                                
-                                function captureEnter() {
-                                    if (window.event.keyCode == 13) {
-                                        document.getElementById("customer-reply").value =document.getElementById("customer-reply").value + "<br/>";
-                                       
-                                        return false;
-    
-                                    }
-                                    else {
-                                        return true;
-                                        }
-                                    }
-                                    function getReply() {
-                                        var replyM = document.getElementById("customer-reply").value;
-                                        replyM.innerHTML += '<p>Hello World!</p>';
-                                   return replyM;
-                                    }
-                                </script>
-                        Hi! Can you deliver 4 pizzas by 6pm today?
-                        </div>
-    
-                    </span>
-                  
-                   <!-- <hr size ="10">-->
+                            <div class="direct-chat-text">
+                            Hi! Can you deliver 4 pizzas by 6pm today?
+                            </div>
+                        </span>
+
+                    </div>
+                <br>
+                    <!-- /.direct-chat-text -->
+                    <div class="direct-chat-info clearfix">
+                        <span class="direct-chat-timestamp pull-left">3.37 PM</span>
+                        
+                    </div>
+
                     
                 </div>
-                <br>
-                          <!-- /.direct-chat-text -->
-                          <div class="direct-chat-info clearfix">
-                                <span class="direct-chat-timestamp pull-left">3.37 PM</span>
+
+            <script type="text/javascript">
                                 
-                            </div>
-    
-            </div>
+                function captureEnter() {
+                    if (window.event.keyCode == 13) {
+                        var replyM = document.getElementById("status_message").value;
+                    
+                        var theChat = document.getElementById("chat").innerHTML;
+                      
+
+                        theChat = theChat + '<div class="direct-chat-info clearfix">';
+                        theChat += '<span id="customer-reply" class="direct-chat-reply-name">Customer</span>';
+                        theChat += '<span class="direct-chat-img-reply-small pull-right">';
+                        theChat += '<div class="direct-chat-text">';
+                        theChat +=   replyM;
+                        theChat += ' </div>';
+                        theChat +=   '</span>';
+                        theChat += '</div><br>';
+                        theChat += '<div class="direct-chat-info clearfix">';
+                        theChat += '<span class="direct-chat-timestamp pull-left">';
+                            var today = new Date();
+                            var hours= today.getHours();
+                            var period = " AM";
+                            if (hours > 12){
+                                hours-=12;
+                                period = " PM";
+                            }
+                        theChat +=  hours+ '.';
+                        theChat += today.getMinutes();
+
+                         theChat+= period +'</span></div>';
+
+                        document.getElementById("chat").innerHTML = theChat;
+
+                    }
+                }
+                    
+                </script>
                         <!-- /.direct-chat-msg
                         
                         
@@ -210,7 +226,7 @@
     </div>
     
     <div class="popup-messages-footer">
-          <input id="status_message" onkeypress="captureEnter();" placeholder="Type a message..." rows="10" cols="40" name="message">
+          <input id="status_message" onkeypress="captureEnter()" placeholder="Type a message..." rows="10" cols="40" name="message">
          <!--<textarea id="status_message" placeholder="Type a message..." rows="10" cols="40" name="message"onkeypress="captureEnter();" ></textarea>-->
        <!-- <input  id ="password2" type="password" placeholder="Confirm Password">-->
         <div class="btn-footer">
