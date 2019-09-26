@@ -4,11 +4,11 @@ import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-@Table(name = "user")
+@Table(name = "members")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long memeberid;
 
     private String username;
 
@@ -20,12 +20,12 @@ public class User {
     @ManyToMany
     private Set<Role> roles;
 
-    public Long getId() {
-        return id;
+    public Long getMemberId() {
+        return memeberid;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setMemberId(Long id) {
+        this.memeberid = id;
     }
 
     public String getUsername() {
