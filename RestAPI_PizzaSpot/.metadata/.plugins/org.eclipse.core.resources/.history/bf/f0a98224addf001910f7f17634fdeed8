@@ -1,0 +1,5 @@
+package com.hellokoding.service;
+
+public class UserServiceImpl {
+
+}

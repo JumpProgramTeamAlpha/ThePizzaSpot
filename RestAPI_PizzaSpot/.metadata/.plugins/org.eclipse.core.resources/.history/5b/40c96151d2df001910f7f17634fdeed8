@@ -1,0 +1,5 @@
+package com.hellokoding.auth.model;
+
+public class Role {
+
+}

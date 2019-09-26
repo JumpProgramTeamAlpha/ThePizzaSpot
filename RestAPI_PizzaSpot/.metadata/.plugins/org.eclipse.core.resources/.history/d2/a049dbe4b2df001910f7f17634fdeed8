@@ -1,0 +1,5 @@
+package com.hellokoding.auth;
+
+public class WebSecurityConfig {
+
+}

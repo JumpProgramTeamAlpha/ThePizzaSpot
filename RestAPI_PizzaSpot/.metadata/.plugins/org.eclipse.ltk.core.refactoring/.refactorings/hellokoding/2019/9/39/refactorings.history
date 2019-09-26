@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;hellokoding&apos; to &apos;com&apos;" description="Move &apos;hellokoding&apos; to &apos;com&apos;" destination="src/main/java/com" element1="/PizzaSpotAPI/src/main/java/com/hellokoding" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1569442621042" updateReferences="true"/>
+</session>
