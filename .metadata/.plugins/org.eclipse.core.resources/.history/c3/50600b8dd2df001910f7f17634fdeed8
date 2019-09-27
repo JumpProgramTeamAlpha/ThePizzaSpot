@@ -1,5 +1,0 @@
-package com.hellokoding.auth.repository;
-
-public class RoleRepository {
-
-}
