@@ -33,7 +33,7 @@
     <div id = "imagebg"> 
     
        <nav>        
-            <a href="../HomePage/Home.html">Home</a> 
+            <a href="${contextPath}welcome">Home</a> 
             <a href="../DealsPage/MainDeals.html">Deals</a> 
             <a href="../PizzaShopMenu/pizzaShopMenu.html">Order</a> 
             <a class="active" href="loginForm.html">Login</a>  

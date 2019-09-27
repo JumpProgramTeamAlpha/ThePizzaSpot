@@ -3,27 +3,6 @@
 
 
 <!DOCTYPE html>
-<%-- <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Create an account</title>
-   
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
-<body>
-  <div class="container">
-    <c:if test="${pageContext.request.userPrincipal.name != null}">
-        <form id="logoutForm" method="POST" action="${contextPath}/logout">
-            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
-        </form>
-
-        <h2>Welcome ${pageContext.request.userPrincipal.name} | <a onclick="document.forms['logoutForm'].submit()">Logout</a></h2>
-    </c:if>
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
-</html> --%>
 
 <html lang="en">
 <!-- head -->
@@ -32,7 +11,9 @@
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="C:\Users\qbieb\Documents\ThePizzaSpot\HomePage">
+    
+     <link href="${contextPath}/resources/css/loginform.css" rel="stylesheet">
+    
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <!-- jQuery library -->
@@ -50,7 +31,7 @@
             <a class="active" href="Home.html">Home</a> 
             <a href="../DealsPage/MainDeals.html">Deals</a> 
             <a href="../PizzaShopMenu/pizzaShopMenu.html">Order</a> 
-            <a href="../LogInForm/loginForm.html">Login</a>  
+            <a href="${contextPath}login">Login</a>  
             <a href="../AboutUsPage/AboutUsPage.html">About Us</a>      
     <div class="toTheRight" >
     <a href="../PizzaStoreLocationPage/pizzaStoreLocator.html"><i class='fas fa-map-marker-alt' style='font-size:35px;color:red'></i></a>
