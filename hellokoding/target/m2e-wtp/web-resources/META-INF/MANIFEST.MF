@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
-Built-By: roynunez
-Build-Jdk: 11.0.4
+Built-By: Daniel Murtagh
+Build-Jdk: 12.0.2
 Implementation-Title: auth
 Implementation-Version: 2.1.1.RELEASE
 Implementation-Vendor-Id: org.springframework.boot
